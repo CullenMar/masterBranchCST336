@@ -1,0 +1,77 @@
+body {
+    background-color: green;
+}
+
+#main {
+    background-image:url("../images/bowl_lane2.jpg");
+    top:180px;
+    left:175px;
+    width:900px;
+    height:447px;
+    position:absolute;
+    margin:0 auto;
+}
+
+.announce{
+    position: absolute;
+    color: white;
+    top:75px;
+    left:400px;
+    font-size: 45px;
+}
+
+.bowlButt{
+    position: absolute;
+    top: 25px;
+    left: 580px;
+    font-size: 30px;
+}
+
+.pin1{
+    top: 350px;
+    left: 600px;
+    position: absolute;
+    z-index: 4;
+}
+.pin2, .pin3{
+    top:315px;
+    position: absolute;
+    z-index: 3;
+}
+.pin2{
+    left:575px;
+}
+.pin3{
+    left:625px;
+}
+.pin4, .pin5, .pin6{
+    top:280px;
+    position: absolute;
+    z-index: 2;
+}
+.pin4{
+    left: 550px;
+}
+.pin5{
+    left: 600px;    
+}
+.pin6{
+    left: 650px;
+}
+.pin7, .pin8, .pin9, .pin10{
+    top:245px;
+    position: absolute;
+    z-index: 1;
+}
+.pin7{
+    left:525px;
+}
+.pin8{
+    left:575px;
+}
+.pin9{
+    left:625px;
+}
+.pin10{
+    left:675px;
+}
