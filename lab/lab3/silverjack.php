@@ -92,7 +92,7 @@
             }
             
             //find winner
-            if (($Player1 > $Player2) && $Player1 < 43){
+            if (($Player1 > $Player2 || $Player2 > 42) && $Player1 < 43){
                 $winner1 = "Player1";
             } else if ($Player2 < 43) {
                 $winner1 = "Player2";
@@ -100,7 +100,7 @@
                 $winner1 = "NA";
             }
             
-            if (($Player3 > $Player4) && $Player3 < 43){
+            if (($Player3 > $Player4 || $Player4 > 42) && $Player3 < 43){
                 $winner2 = "Player3";
             } else if ($Player4 < 43) {
                 $winner2 = "Player4";
@@ -112,19 +112,19 @@
             if ($winner1 != "NA" && $winner2 != "NA") {
                 if (${$winner1} > ${$winner2}) {
                     $finalScore = $finalScore - ${$winner1};
-                    echo $winner1 . ' wins with ' . $finalScore . 'points!';
+                    echo $winner1 . ' wins with ' . $finalScore . ' points!';
                 } else {
                     $finalScore = $finalScore - ${$winner2};
-                    echo $winner2 . ' wins with ' . $finalScore . 'points!';
+                    echo $winner2 . ' wins with ' . $finalScore . ' points!';
                 }
             } else if ($winner1 == "NA" && $winner2 == "NA") {
                 echo "Everybody loses!";
             } else if ($winner1 == "NA") {
                 $finalScore = $finalScore - ${$winner2};
-                echo $winner2 . ' wins with ' . $finalScore . 'points!';
+                echo $winner2 . ' wins with ' . $finalScore . ' points!';
             } else {
                 $finalScore = $finalScore - ${$winner1};
-                echo $winner1 . ' wins with ' . $finalScore . 'points!';
+                echo $winner1 . ' wins with ' . $finalScore . ' points!';
             }
         ?>
         
