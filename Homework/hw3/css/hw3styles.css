@@ -1,0 +1,38 @@
+#placementPiece1 {
+    top: 200px;
+    left: 200px;
+    color: red;
+    font-size: 20px;
+    position: absolute;
+}
+#placementPiece2 {
+    top: 240px;
+    left: 400px;
+    color: darkblue;
+    font-size: 20px;
+    position: absolute;
+}
+#placementPiece3 {
+    top: 280px;
+    left: 600px;
+    color: green;
+    font-size: 20px;
+    position: absolute;
+}
+#placeButt {
+    top: 320px;
+    left: 800px;
+    color: maroon;
+    font-size: 20px;
+    position: absolute;
+}
+body {
+    background-color: teal;
+}
+p1 {
+    background-color: lightblue;
+    position: absolute;
+    left: 370px;
+    top: 10px;
+    font-size: 30px;
+}
