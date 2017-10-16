@@ -5,4 +5,5 @@
     <a href="./lab/777/index.php">Lab 2</a>
     <a href="./lab/lab3/silverjack.php">Lab 3</a>
     <a href="./lab/lab4/ledboard.php">Lab 4</a>
+    <a href="./lab/lab5/techCheckout.php">Lab 5</a>
 </html>
