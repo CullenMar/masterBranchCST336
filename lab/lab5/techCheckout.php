@@ -37,13 +37,32 @@
         
         <?php
         //connecting to db
-        $dbHost = getenv('IP');
-        $dbPort = 3306;
-        $dbName = "device_db";
-        $username = getenv('C9_USER');
-        $password = "";
+        // $dbHost = getenv('IP');
+        // $dbPort = 3306;
+        // $dbName = "device_db";
+        // $username = getenv('C9_USER');
+        // $password = "";
         
-        $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
+        // $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
+        // $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        //mysql://b8323975c4cd67:34bafd27@us-cdbr-iron-east-05.cleardb.net/heroku_961b60034c1f1e1?reconnect=true
+        // $var1  => [
+        //     //mysql://b419fdf6d21e11:c78bdf37@us-cdbr-iron-east-02.cleardb.net/heroku_f7469a0c6b39995?reconnect=true
+        //     'driver'    => 'mysql',
+        //     'host'      => env('DB_HOST', 'us-cdbr-iron-east-02.cleardb.net'),
+        //     'database'  => env('DB_DATABASE', 'heroku_f7469a0c6b39995'),
+        //     'username'  => env('DB_USERNAME', 'b419fdf6d21e11'),
+        //     'password'  => env('DB_PASSWORD', 'c78bdf37'),
+        //     'charset'   => 'utf8',
+        //     'collation' => 'utf8_unicode_ci',
+        //     'prefix'    => '',
+        //     'strict'    => false,
+        // ],
+        $dbHost = "us-cdbr-iron-east-05.cleardb.net";
+        $dbDatabase = "heroku_961b60034c1f1e1";
+        $dbUserN = "b8323975c4cd67";
+        $dbPassW = "34bafd27";
+        $dbConn = new PDO("mysql:host=$dbHost;port=3306;dbname=$dbDatabase", $dbUserN, $dbPassW);
         $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         $sql = " SELECT * FROM device";
@@ -72,14 +91,16 @@
             $sql = $sql . " availability = '" . $_SESSION["userQuant"] ."'";
             $AND = 1;
         }
+        if ($_SESSION["userOrder"] == null)
+            $_SESSION["userOrder"] = "name";
         $sql = $sql . " ORDER BY " . $_SESSION["userOrder"];
         //executes sql statement
-        echo $sql . "<br />";
+        echo "KEY: NAME, TYPE, AVAILABLE, PRICE <br />";
         $stmt = $dbConn -> prepare($sql);
         $stmt -> execute ();
         
         while ($row = $stmt -> fetch())  {
-            echo  $row['name'] . ", " . $row['type'] . ", " . $row['availability'] . ", " . $row['price'] . "<br />";
+            echo  $row['name'] . ", " . $row['type'] . ", " . $row['availability'] . ", $" . $row['price'] . "<br />";
         }
         
         session_unset();
