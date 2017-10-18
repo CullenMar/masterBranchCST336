@@ -37,15 +37,15 @@
         
         <?php
         //connecting to db
-        // $dbHost = getenv('IP');
-        // $dbPort = 3306;
-        // $dbName = "device_db";
-        // $username = getenv('C9_USER');
-        // $password = "";
+        $dbHost = getenv("sqlhost");
+        $dbPort = 3306;
+        $dbName = getenv("sqldb");
+        $username = getenv("sqluser");
+        $password = getenv("sqlpw");
         
-        // $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
-        // $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        //mysql://b8323975c4cd67:34bafd27@us-cdbr-iron-east-05.cleardb.net/heroku_961b60034c1f1e1?reconnect=true
+        $dbConn = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName", $username, $password);
+        $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // mysql://b8323975c4cd67:34bafd27@us-cdbr-iron-east-05.cleardb.net/heroku_961b60034c1f1e1?reconnect=true
         // $var1  => [
         //     //mysql://b419fdf6d21e11:c78bdf37@us-cdbr-iron-east-02.cleardb.net/heroku_f7469a0c6b39995?reconnect=true
         //     'driver'    => 'mysql',
@@ -58,12 +58,12 @@
         //     'prefix'    => '',
         //     'strict'    => false,
         // ],
-        $dbHost = "us-cdbr-iron-east-05.cleardb.net";
-        $dbDatabase = "heroku_961b60034c1f1e1";
-        $dbUserN = "b8323975c4cd67";
-        $dbPassW = "34bafd27";
-        $dbConn = new PDO("mysql:host=$dbHost;port=3306;dbname=$dbDatabase", $dbUserN, $dbPassW);
-        $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // $dbHost = "us-cdbr-iron-east-05.cleardb.net";
+        // $dbDatabase = "heroku_961b60034c1f1e1";
+        // $dbUserN = "b8323975c4cd67";
+        // $dbPassW = "34bafd27";
+        // $dbConn = new PDO("mysql:host=$dbHost;port=3306;dbname=$dbDatabase", $dbUserN, $dbPassW);
+        // $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         $sql = " SELECT * FROM device";
         $AND = 0;
