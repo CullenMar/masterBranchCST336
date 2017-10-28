@@ -60,6 +60,12 @@
                     <option value="Fantasy">Fantasy</option>
                     <option value="Adventure">Adventure</option>
                     <option value="Horror">Horror</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Action">Action</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Drama">Drama</option>
                 </select> <br />
                 
                 Studio: <select name="studioTxt">
@@ -67,6 +73,8 @@
                     <option value="Disney">Disney</option>
                     <option value="Pixar">Pixar</option>
                     <option value="Dreamworks">Dreamworks</option>
+                    <option value="Studio Ghibli">Studio Ghibli</option>
+                    <option value="Warner Brothers">Warner Brothers</option>
                 </select> <br />
                 
                 Price: <select name="priceTxt">
