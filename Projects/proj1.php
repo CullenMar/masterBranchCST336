@@ -27,18 +27,13 @@
     </head>
     <body>
             <h1 id="title">Online Movie Store</h1>
-            <script type="text/javascript">
-                function reply_click(clicked_id)
-                {
-                    alert(clicked_id);
-                }
-            </script>
+
             <form id="forms" method="get">
                 Name Lookup: <input type="text" list="options" name="lookupTxt" autocomplete="on"> <br />
                 
                 <datalist id="options">
                     <?php
-                    $dbHost = getenv('IP');
+                    $dbHost = getenv('DATABASE_URL');
                     $dbPort = 3306;
                     $dbName = getenv("sqldb2");
                     $username = getenv("sqluser");
@@ -88,7 +83,7 @@
         
         <?php
         //connecting to db
-        $dbHost = getenv('IP');
+        $dbHost = getenv('DATABASE_URL');
         $dbPort = 3306;
         $dbName = getenv("sqldb2");
         $username = getenv("sqluser");
