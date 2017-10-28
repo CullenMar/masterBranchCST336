@@ -40,7 +40,7 @@
                     <?php
                     $dbHost = getenv('IP');
                     $dbPort = 3306;
-                    $dbName = getenv("sqldb");
+                    $dbName = getenv("sqldb2");
                     $username = getenv("sqluser");
                     $password = getenv("sqlpw");
                     
@@ -90,7 +90,7 @@
         //connecting to db
         $dbHost = getenv('IP');
         $dbPort = 3306;
-        $dbName = getenv("sqldb");
+        $dbName = getenv("sqldb2");
         $username = getenv("sqluser");
         $password = getenv("sqlpw");
         
