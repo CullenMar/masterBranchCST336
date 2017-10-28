@@ -33,7 +33,7 @@
                 
                 <datalist id="options">
                     <?php
-                    $dbHost = getenv('DATABASE_URL');
+                    $dbHost = getenv('sqlhost');
                     $dbPort = 3306;
                     $dbName = getenv("sqldb2");
                     $username = getenv("sqluser");
@@ -83,7 +83,7 @@
         
         <?php
         //connecting to db
-        $dbHost = getenv('DATABASE_URL');
+        $dbHost = getenv('sqlhost');
         $dbPort = 3306;
         $dbName = getenv("sqldb2");
         $username = getenv("sqluser");
