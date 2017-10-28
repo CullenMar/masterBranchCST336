@@ -7,9 +7,9 @@
     if(isset($_GET["nametest"]))
         $_SESSION["testnames"] = $_GET["nametest"];
     
-    $dbHost = getenv('IP');
+    $dbHost = getenv('sqlhost');
     $dbPort = 3306;
-    $dbName = getenv("sqldb");
+    $dbName = getenv("sqldb2");
     $username = getenv("sqluser");
     $password = getenv("sqlpw");
     
@@ -27,7 +27,7 @@
 <html>
     <head>
         <title><?php echo $itemName; ?></title>
-        <link href="/Project1/css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="/Projects/css/styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         
@@ -51,9 +51,9 @@
         echo "<div id='movieInfo'>Genre: " . $row['genre'] . "<br>Studio: " . $row['studio'] . "<br>Price: $" . $row['price'] . "<br><br>" . $row['description'];
                     
         
-        echo  "</div><div id='links'><br><a href='./project1.php?" . $cartArrange . "userCart[]=" . $itemName . "'>ADD ITEM </a>";
+        echo  "</div><div id='links'><br><a href='./proj1.php?" . $cartArrange . "userCart[]=" . $itemName . "'>ADD ITEM </a>";
         echo str_repeat('&nbsp;', 5);
-        echo  "<a href='./project1.php?" . $cartArrange . "'> CANCEL</a><div>";
+        echo  "<a href='./proj1.php?" . $cartArrange . "'> CANCEL</a><div>";
         ?>
         
     </body>

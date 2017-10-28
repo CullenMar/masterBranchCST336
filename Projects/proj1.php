@@ -17,6 +17,9 @@
         $_SESSION["sort"] = $_GET["sortTxt"];
     if(isset($_GET["priceTxt"]))
         $_SESSION["price"] = $_GET["priceTxt"];
+        
+    if($_GET["reset"] == 1)
+        unset($_SESSION['myCart']);
 ?>
 
 <!DOCTYPE html>
@@ -158,7 +161,7 @@
                 echo "-".$_SESSION['myCart'][$i]."<br />";
             }  
         echo "<br>";
-        echo "<a href='https://project-1-carlosgarcia.c9users.io/Project1/project1.php' style='color:red' > Delete Shopping List </a>";
+        echo "<a href='./proj1.php?reset=1' style='color:red' > Delete Shopping List </a>";
         echo "</div><br><br>";
         
         //print out list of available movies based on sql select
@@ -174,8 +177,7 @@
             }
         echo "</form>";
         
-        session_unset();
-        
+        //session_unset();
 
         ?>
         
