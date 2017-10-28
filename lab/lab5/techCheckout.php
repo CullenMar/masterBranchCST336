@@ -37,7 +37,7 @@
         
         <?php
         //connecting to db
-        $dbHost = getenv('IP');
+        $dbHost = getenv('sqlhost');
         $dbPort = 3306;
         $dbName = getenv("sqldb");
         $username = getenv("sqluser");
