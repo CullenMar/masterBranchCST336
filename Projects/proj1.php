@@ -1,7 +1,12 @@
 <?php
 
-    // $userCart = array();
-    // $userCart = $_SESSION["userCart"];
+    //DATABASE INFO:
+    //IP: 0.0.0.0               (sqlhost)
+    //USERNAME: cullenm         (sqluser)
+    //PW:                       (sqlpw)
+    //DB NAME: Project1_alt     (sqldb2)
+    
+    
     session_start();
     
     if(isset($_GET["userCart"]))

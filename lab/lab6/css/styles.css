@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background-color: lightgreen;
+    font-size: 20px;
+}
+
+#edit {
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#userlist {
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#success {
+    color: gold;
+    font-weight: bold;
+    font-size: 25px;
+}
