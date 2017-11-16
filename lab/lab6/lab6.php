@@ -1,4 +1,6 @@
 <?php
+//IF APP NOT WORKING USE HEROKU || OR || LOOK AT bash.rc FOR ENVIRONMENT VARIABLES
+
     session_start();
     if(isset($_GET["log"])){
         session_unset();
