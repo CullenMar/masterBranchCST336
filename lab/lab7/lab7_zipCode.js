@@ -1,6 +1,6 @@
 $(function() {
 
-     var zipCode = document.getElementById('zip').value;
+    var zipCode = document.getElementById('zip').value;
 
     $.ajax({
         

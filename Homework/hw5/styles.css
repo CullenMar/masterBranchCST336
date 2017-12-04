@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    padding-top: 75px;
+    background-color: #ff5050;
+}
+#pokename {
+    color: blue;
+    font-size: 20px;
+}
+#poketype {
+    color: green;
+    font-size: 20px;
+}
+#title1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+#userInput1 {
+    font-size: 15px;
+    font-style: italic;
+}
