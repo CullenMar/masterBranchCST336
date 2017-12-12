@@ -1,19 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-    <script type="text/javascript">
-    var x = 0;
-        function jsfunction() {
-            document.getElementById("test1").innerHTML ="<br>" + document.getElementById("test1").innerHTML;
-            x++;
-            if (x > 30) {
-                document.getElementById("test1").innerHTML = "LAURA GRADE THIS ASSIGNMENT ASAP PLEASE!!!";
-                x = 0;
-            }
-            if (x == 15) {
-                document.body.style.backgroundImage = "url('fun.png')";
-            }
-        }
-    </script>
     <a href="./Homework/hw2/index.php">Homework 2</a>
     <a href="./Homework/hw3/hw3index.php">Homework 3</a>
     <a href="./Homework/hw4/hw2JsRevised.php">Homework 4 JS</a>
@@ -30,5 +16,21 @@
     <br>
     <a href="./Projects/proj1.php">PROJECT 1</a>
     <br>
+    <a href="./FinalProj/finproj.php">PROJECT FINAL</a>
+    <br>
     <a onmouseover="jsfunction()" href="#" id="test1">LAURA GRADE THIS ASSIGNMENT ASAP PLEASE!!!</a>
+    <script type="text/javascript">
+    var x = 0;
+        function jsfunction() {
+            document.getElementById("test1").innerHTML ="<br>" + document.getElementById("test1").innerHTML;
+            x++;
+            if (x > 30) {
+                document.getElementById("test1").innerHTML = "LAURA GRADE THIS ASSIGNMENT ASAP PLEASE!!!";
+                x = 0;
+            }
+            if (x == 15) {
+                document.body.style.backgroundImage = "url('fun.png')";
+            }
+        }
+    </script>
 </html>

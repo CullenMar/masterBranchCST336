@@ -1,0 +1,105 @@
+body {
+    background-color: #34bbaa;
+}
+.menuButts {
+    background-color: grey;
+    position: absolute;
+    height: 50px;
+    top: 50px;
+}
+.generatedButts {
+    font-size: 30px;
+}
+.rsc {
+    position: absolute;
+    height: 200px;
+    width: 370px;
+    z-index: -2;
+}
+#logInDisplay {
+    background-color: #b8860b;
+    position: absolute;
+    top: 110px;
+    left: 77px;
+    font-size: 30px;
+    visibility: hidden;
+}
+#createAccDisplay {
+    background-color: #b8860b;
+    position: absolute;
+    top: 110px;
+    left: 132px;
+    font-size: 30px;
+    text-align: center;
+    visibility: hidden;
+}
+.adminSect {
+    background-color: #FFD39B;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    top: 150px;
+}
+/*---------------------*/
+#logInButt {
+    left: 75px;}
+#createAccButt {
+    left: 131px;}
+#homeButt {
+    background-color: white;
+    left: 20px;}
+#createC {
+    height: 50px;
+    font-size: 30px;}
+#logInL {
+    height: 40px;
+    width: 335px;
+    font-size: 30px;}
+#logOutButt {
+    visibility: hidden;
+    left: 75px;}
+#myAccButt {
+    visibility: hidden;
+    left: 142px;}
+#showReportsButt {
+    visibility: hidden;
+    left: 255px;
+    background-color: red;}
+#hideReportsButt {
+    visibility: hidden;
+    left: 255px;
+    background-color: red;}
+#adminSectionU {
+    left: 150px;}
+#adminSectionT {
+    left: 500px;}
+#backGroundCent {
+    padding: 25px;
+    background-color: #DC4C46;
+    left: 500px;}
+#adminSectionGL {
+    left: 850px;}
+#teamInpStr {
+    width: 290px;
+    font-size: 28px;}
+#teamSelect {
+    font-size: 20px;
+    height: 50px;}
+#cup1 {
+    left: 250px;
+    top: 1px;}
+#cup2 {
+    left: 20px;
+    top: 150px;}
+#cup3 {
+    left: 300px;
+    top: 450px;}
+#cup4 {
+    left: 760px;
+    top: 400px;}
+#cup5 {
+    left: 560px;
+    top: 210px;}
+#cup6 {
+    left: 940px;
+    top: 50px;}
